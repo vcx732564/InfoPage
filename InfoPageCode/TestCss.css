@@ -1,0 +1,191 @@
+﻿body {
+    background-image: url(Image/XB2.png);
+    /* 讓圖片不重覆排列 */
+    background-repeat: no-repeat;
+    /* 固定背景圖片位置 */
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 背景圖 */
+.Image_Background {
+    background-image: url(Image/XB1.jpg);
+    background-size: cover;
+    content: " ";
+    width: auto;
+    height: 1080px;
+    max-width: 100%;
+    
+}
+
+/*遮罩*/
+.BlackBackground {
+    background: rgba(0,0,0,.7);
+    width: auto;
+    height: 1080px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*網頁標題 div*/
+.container-fluid div {
+    padding-left: 30px;
+}
+
+
+
+/* Nav 文字*/
+.nav_setting li {
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+/*MainPage*/
+.MainPage {
+    background-image: url(Image/XB2_DLC.jpg);
+    background-size: cover;
+    content:" ";
+    width: auto;
+    height: 1080px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Nav 功能按鈕*/
+#myNavbar a {
+    color: white;
+    background: rgba(0,0,0,.0);
+    font-family: 'Viga', sans-serif;
+}
+    /*功能按鈕*/
+    #myNavbar a::after {
+        margin-top: 7px;
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background: white;
+        transition: width .3s;
+        border-radius: 4px;
+    }
+
+    /*功能按鈕*/
+    #myNavbar a:hover:after {
+        width: 100%;
+    }
+
+/*網頁標題*/
+.NavBar_Setting a {
+    color: white;
+    font-size: 50px;
+    padding-top: 30px;
+    font-family: 'Viga', sans-serif;
+}
+    /*網頁標題 Mouseover*/
+    .NavBar_Setting a:hover {
+        color: white;
+    }
+    /*網頁標題文字 Focus時(原本會變深藍色 改成不變色)*/
+    .NavBar_Setting a:focus {
+        color: white;
+    }
+
+
+/*網頁清單按鈕 */
+.NavBar_Setting button {
+    color: white;
+    background: rgba(0,0,0,.0);
+    border-style: none;
+}
+
+.Hi_Text {
+    padding-top: 8%;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+.Name_Text {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 180px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background: rgba(0,0,0,.0);
+}
+
+.info2 {
+    background: rgba(0,0,0,.2);
+    content: " ";
+    height: 100%;
+}
+
+
+.tabs > li{
+    width:25%;
+    float:left;
+}
+
+ 
+.GoGo{
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-top:15%;
+}
+
+.Introduction_Text{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/*  (max-width:480px) vs (min-width: 321px) and (max-width: 768px)*/
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    .NavBar_Setting a {
+        font-size: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .Image_Background {
+        background-size: cover;
+        width: auto;
+        height: 1080px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .Name_Text {
+        font-family: 'Audiowide', cursive;
+        color: white;
+        font-size: 60px;
+    }
+
+    .navbar-nav {
+        background-color: #393939; /*-- New attribute --*/
+        background: rgba(255,119,0,.95);
+        border-radius: 7px;
+    }
+
+    #myNavbar {
+        margin-right: 0;
+        position: absolute;
+        z-index: 999;
+        width: 97%;
+        content: " ";
+    }
+
+    .Hi_Text {
+        padding-top: 8%;
+        font-family: 'Audiowide', cursive;
+        color: white;
+        font-size: 30px;
+    }
+}
