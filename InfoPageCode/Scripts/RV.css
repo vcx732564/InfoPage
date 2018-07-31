@@ -1,76 +1,92 @@
 ul.tabs {
-	margin: 0;
-	padding: 0;
-	float: left;
-	list-style: none;
-	height: 32px;
-	width: 100%;
-    
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    height: 50px;
+    width: 85%;
+    display: inline-block;
+    text-align: center;
 }
 
-ul.tabs li {
-	float: left;
-	margin: 0;
-	cursor: pointer;
-	padding: 0px 21px;
-	height: 31px;
-	line-height: 31px;
+    ul.tabs li {
+        float: left;
+        margin: 0;
+        cursor: pointer;
+        height: 50px;
+        width: 20%;
+        line-height: 31px;
+        background-color: #666;
+        color: #ccc;
+        overflow: hidden;
+        position: static;
+        border-radius: 7px;
+        margin-right: 10px;
+    }
 
-	background-color: #666;
-	color: #ccc;
-	overflow: hidden;
-	position: relative;
-}
 
-.tab_last {}
+        ul.tabs li:hover {
+            background-color: #ccc;
+            color: #333;
+        }
 
-ul.tabs li:hover {
-	background-color: #ccc;
-	color: #333;
-}
-
-ul.tabs li.active {
-	background-color: #fff;
-	color: #333;
-
-	display: block;
-}
+        ul.tabs li.active {
+            background: rgba(255,119,0,1);
+            color: #333;
+            display: block;
+        }
 
 .tab_container {
-	clear: both;
-	float: left;
-	width: 100%;
-	background: #fff;
-	overflow: auto;
+    clear: both;
+    float: left;
+    width: 90%;
+    overflow: auto;
+    padding-left: 10%;
 }
 
 .tab_content {
-	padding: 20px;
-	display: none;
+    padding: 20px;
+    display: none;
 }
 
-.tab_drawer_heading { display: none; }
+.tab_drawer_heading {
+    display: none;
+}
 
-@media screen and (min-width: 321px) and (max-width: 768px){
-	.tabs {
-		display: none;
-	}
-	.tab_drawer_heading {
-		background-color: #ccc;
-		color: #fff;
-		margin: 0;
-		padding: 5px 20px;
-		display: block;
-		cursor: pointer;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	.d_active {
-		background-color: #666;
-		color: #fff;
-	}
+.tab_div {
+    width: 100%;
+    background: #fff;
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .div_info1-1 > ul {
+        display: none;
+    }
+
+    .tab_drawer_heading {
+        background-color: #ccc;
+        color: #fff;
+        margin: 0;
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .d_active {
+        background: rgba(255,119,0,1);
+        color: #fff;
+    }
+
+    .tab_container {
+        padding-left: 0;
+        width: 100%;
+    }
+
 }
