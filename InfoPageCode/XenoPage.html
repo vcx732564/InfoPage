@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--下拉選單-->
-    <link href="Scripts/RV.css?a=33" rel="stylesheet" />
+    <link href="Scripts/RV.css?a=35" rel="stylesheet" />
 
 
 </head>
@@ -86,16 +86,20 @@
 
 
             </div>
+
+            <!-- .tab_container -->
             <div class="tab_container">
-                <h3 class="d_active tab_drawer_heading" rel="tab1">About Me</h3>
+                <!-- #tab1 -->
+                <h3 class="d_active tab_drawer_heading" rel="tab1" id="tab1_btn">About Me</h3>
                 <div class="tab_div">
                     <div id="tab1" class="tab_content">
                         <h2>Tab 1 content</h2>
                         <p>你給我閉嘴 歐巴馬</p>
                     </div>
                 </div>
-                <!-- #tab1 -->
-                <h3 class="tab_drawer_heading" rel="tab2">Skills</h3>
+
+                <!-- #tab2 -->
+                <h3 class="tab_drawer_heading" rel="tab2" id="tab2_btn">Skills</h3>
                 <div class="tab_div">
                     <div id="tab2" class="tab_content">
                         <h2>Tab 2 content</h2>
@@ -108,8 +112,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- #tab2 -->
-                <h3 class="tab_drawer_heading" rel="tab3">Education</h3>
+
+                <!-- #tab3 -->
+                <h3 class="tab_drawer_heading" rel="tab3" id="tab3_btn">Education</h3>
                 <div class="tab_div">
                     <div id="tab3" class="tab_content">
                         <h2>Tab 3 content</h2>
@@ -124,20 +129,18 @@
                         </p>
                     </div>
                 </div>
-                <!-- #tab3 -->
-                <h3 class="tab_drawer_heading" rel="tab4">Experience</h3>
+
+                <!-- #tab4 -->
+                <h3 class="tab_drawer_heading" rel="tab4" id="tab4_btn">Experience</h3>
                 <div class="tab_div">
                     <div id="tab4" class="tab_content">
                         <h2>Tab 4 content</h2>
                         <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
                     </div>
                 </div>
-                <!-- #tab4 -->
             </div>
-            <!-- .tab_container -->
+
             <script>
-                // tabbed content
-                // http://www.entheosweb.com/tutorials/css/tabs.asp
                 $(".tab_content").hide();
                 $(".tab_content:first").show();
 
@@ -160,23 +163,33 @@
                 /* if in drawer mode */
                 $(".tab_drawer_heading").click(function () {
 
-                    $(".tab_content").hide();
-                    var d_activeTab = $(this).attr("rel");
-                    $("#" + d_activeTab).fadeIn();
-                    //變動高度
-                    $(".Info2").height(String(500 + parseInt($("#" + d_activeTab).height()) + 30) + 'px');
+                    //判斷目前文字框是否是開啟狀態
+                    var now_Text_Area = $(this).attr('rel');
+                    if ($('#' + now_Text_Area).is(":hidden")) {
+                        $(".tab_content").hide();
+                        var d_activeTab = $(this).attr("rel");
+                        $("#" + d_activeTab).fadeIn();
+                        //變動高度
+                        $(".Info2").height(String(500 + parseInt($("#" + d_activeTab).height()) + 30) + 'px');
 
-                    $(".tab_drawer_heading").removeClass("d_active");
-                    $(this).addClass("d_active");
+                        $(".tab_drawer_heading").removeClass("d_active");
+                        $(this).addClass("d_active");
 
-                    $("ul.tabs li").removeClass("active");
-                    $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+                        $("ul.tabs li").removeClass("active");
+                        $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+
+                        //location.href = '#' + d_activeTab + '_btn';
+
+                    } else {
+
+                        //關閉文字區塊
+                        $('#' + now_Text_Area).hide();
+                        $(".Info2").height(String(530) + 'px');
+
+                    }
+
                 });
 
-
-                /* Extra class "tab_last"
-                   to add border to right side
-                   of last tab */
                 $('ul.tabs li').last().addClass("tab_last");
 
             </script>
