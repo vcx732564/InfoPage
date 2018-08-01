@@ -1,9 +1,5 @@
 ﻿body {
-    background-image: url(Image/XB2.png);
-    /* 讓圖片不重覆排列 */
-    background-repeat: no-repeat;
-    /* 固定背景圖片位置 */
-    background-attachment: fixed;
+    background: url(Image/XB2.png) center center fixed no-repeat;
     background-size: cover;
     width: auto;
     height: auto;
@@ -13,7 +9,7 @@
 
 /* 背景圖 */
 .Image_Background {
-    background-image: url(Image/XB1.jpg);
+    background: url(Image/XB1.jpg) center center;
     background-size: cover;
     content: " ";
     width: auto;
@@ -45,7 +41,7 @@
 
 /*MainPage*/
 .MainPage {
-    background-image: url(Image/XB2_DLC.jpg);
+    background: url(Image/XB2_DLC.jpg) center center;
     background-size: cover;
     content: " ";
     width: auto;
@@ -142,13 +138,13 @@
     width: 100%;
 }
 
-
+/*
 .Introduction_Text {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-}
+}*/
 
 
 /*回到頂端按鈕*/
