@@ -5,7 +5,7 @@
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* 背景圖 */
@@ -179,33 +179,29 @@ li p {
     padding-top: 4%;
 }
 
-.InfoText{
-        
-        border-radius:3px;
-        float: left;
-
-    }
+.InfoText {
+    border-radius: 3px;
+    float: left;
+}
 
 .col-sm-3 > p {
-    font-size:24px;
-    font-weight:bold;
-
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .col-sm-9 > p {
-    font-size:20px;
+    font-size: 20px;
 }
 
-.PhotoDiv{
-    text-align:center;
-
+.PhotoDiv {
+    text-align: center;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    .InfoText{
-        padding-top:30px;
+    .InfoText {
+        padding-top: 30px;
     }
 }
 
@@ -231,7 +227,7 @@ li p {
         max-height: 100%;
     }
 
-     /* "HI I'm" 的文字*/
+    /* "HI I'm" 的文字*/
     .Hi_Text {
         padding-top: 8%;
         font-family: 'Audiowide', cursive;
@@ -243,7 +239,7 @@ li p {
     .Name_Text {
         font-family: 'Audiowide', cursive;
         color: white;
-        font-size: 60px;
+        font-size: 90px;
     }
 
     /*清單第一層*/
@@ -264,7 +260,7 @@ li p {
         text-align: center;
     }
 
-   
+
     /*子清單*/
     #Child_List1, #Child_List2, #Child_List3 {
         padding: 0;
@@ -274,9 +270,12 @@ li p {
     /*子清單背景*/
     #Child_List_all {
         background: rgba(56,56,56,1);
-        margin:0px 20px 0px 20px;
-        border-radius:5px;
+        margin: 0px 20px 0px 20px;
+        border-radius: 5px;
     }
 
-    
+    /*資訊頁面 為了Mobile模式出始時能配合About Me的長度*/
+    .Info_Page {
+        height: 1316px;
+    }
 }
