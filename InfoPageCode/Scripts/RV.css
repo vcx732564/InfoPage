@@ -46,6 +46,7 @@ ul.tabs {
 .tab_content {
     padding: 20px;
     display: none;
+    padding-top:20px;
 }
 
 .tab_drawer_heading {
