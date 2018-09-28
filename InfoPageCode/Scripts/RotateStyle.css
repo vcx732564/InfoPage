@@ -11,7 +11,8 @@
         .circular-chart {
             display: block;
             margin: 10px auto;
-            max-width: 150px;
+            /*決定圓的大小*/
+            max-width: 180px;
         }
 
         .circle {
@@ -33,10 +34,7 @@
             }
         }
 
-        .circular-chart.orange .circle {
-            stroke: lightblue;
-        }
-
+        
 
         .percentage {
             fill: #666;
@@ -44,3 +42,61 @@
             font-size: 0.5em;
             text-anchor: middle;
         }
+
+
+
+        /*===============此區為百分比圓圈的顏色 Start==============*/
+        .circular-chart.orange .circle {
+            stroke: #ff0000;
+        }
+
+        /*SqlServer Circle Color*/
+        .circular-chart.SqlColor .circle {
+            stroke: #E53E3F;
+        }
+
+
+        /*CShap Circle Color*/
+        .circular-chart.CShapColor .circle {
+            stroke: #A562C6;
+        }
+
+        /*VB Circle Color*/
+        .circular-chart.VBColor .circle {
+            stroke: #0096E1;
+        }
+
+        /*Asp Circle Color*/
+        .circular-chart.AspColor .circle {
+            stroke: #949494;
+        }
+        
+        /*HTML5 Circle Color*/
+        .circular-chart.HTML5Color .circle {
+            stroke: #E44D26;
+        }
+
+        /*Css Circle Color*/ 
+        .circular-chart.CssColor .circle {
+            stroke: #33A9DC;
+        }
+        
+        /*Javascript Circle Color*/ 
+        .circular-chart.JSColor .circle {
+            stroke: #88CD17;
+        }
+
+        /*jQuery Circle Color*/ 
+        .circular-chart.jQueryColor .circle {
+            stroke: #183555;
+        }
+        /*===============此區為百分比圓圈的顏色 End ==============*/
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+     .circular-chart {
+            /*決定圓的大小*/
+            max-width: 150px;
+        }
+
+
+}

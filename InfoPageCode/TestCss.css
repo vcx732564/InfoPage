@@ -174,29 +174,7 @@
     height: 100px;
 }
 
-/*Info Page的桌面模式按鈕*/
-li p {
-    font-size: 25px;
-    padding-top: 4%;
-}
 
-.InfoText {
-    border-radius: 3px;
-    float: left;
-}
-
-.col-sm-3 > p {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.col-sm-9 > p {
-    font-size: 20px;
-}
-
-.PhotoDiv {
-    text-align: center;
-}
 
 
 
@@ -279,5 +257,10 @@ li p {
     /*資訊頁面 為了Mobile模式出始時能配合About Me的長度*/
     .Info_Page {
         height: 1316px;
+    }
+
+    /*Info資訊 為了跟4個按鈕隔開的空格*/
+    .Space_Div {
+        height: 30px;
     }
 }
