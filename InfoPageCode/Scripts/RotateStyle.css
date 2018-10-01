@@ -95,8 +95,9 @@
 @media screen and (min-width: 321px) and (max-width: 768px) {
      .circular-chart {
             /*決定圓的大小*/
-            max-width: 150px;
+            max-width: 100px;
         }
+
 
 
 }

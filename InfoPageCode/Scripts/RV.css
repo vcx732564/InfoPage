@@ -14,7 +14,7 @@ ul.tabs {
 
     ul.tabs li {
         padding: 0px;
-        border-style:none;
+        border-style: none;
         margin: 0;
         cursor: pointer;
         width: 24%;
@@ -46,7 +46,7 @@ ul.tabs {
 .tab_content {
     padding: 20px;
     display: none;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .tab_drawer_heading {
@@ -86,15 +86,13 @@ li p {
 
 
 .TabTag {
-    background: linear-gradient(-75deg, transparent 35px,#666  0),
-        linear-gradient(-75deg, transparent 15px,rgba(255,119,0)  0);
+    background: linear-gradient(-75deg, transparent 35px,#666 0), linear-gradient(-75deg, transparent 15px,rgba(255,119,0) 0);
     width: 380px;
-    height:60px;
-    font-size:40px; 
-    color:#FFF;
-    -webkit-font-smoothing: antialiased; 
-    padding-left:30px;
-
+    height: 60px;
+    font-size: 40px;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    padding-left: 30px;
 }
 
 
@@ -130,5 +128,11 @@ li p {
 
     .tab_div {
         border-radius: 0px;
+    }
+
+    .TabTag {
+        width: 300px;
+        height: 50px;
+        font-size: 32px;
     }
 }
