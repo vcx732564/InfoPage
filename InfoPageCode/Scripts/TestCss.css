@@ -1,5 +1,5 @@
 ﻿body {
-    background: url(Image/XB2.png) center center fixed no-repeat;
+    background: url(../Image/XB2.png) center center fixed no-repeat;
     background-size: cover;
     width: auto;
     height: auto;
@@ -10,7 +10,7 @@
 
 /* 背景圖 */
 .Image_Background {
-    background: url(Image/XB1.jpg) center center;
+    background: url(../Image/XB1.jpg) center center;
     background-size: cover;
     content: " ";
     width: auto;
@@ -43,7 +43,7 @@
 
 /*MainPage*/
 .MainPage {
-    background: url(Image/XB2_DLC.jpg) center center;
+    background: url(../Image/XB2_DLC.jpg) center center;
     background-size: cover;
     content: " ";
     width: auto;

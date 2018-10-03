@@ -82,9 +82,10 @@ li p {
 
 .PhotoDiv {
     text-align: center;
+    padding-top:37px;
 }
 
-
+/*每個頁面的標題Tag (灰橘那個標題)*/
 .TabTag {
     background: linear-gradient(-75deg, transparent 35px,#666 0), linear-gradient(-75deg, transparent 15px,rgba(255,119,0) 0);
     width: 380px;
@@ -130,6 +131,7 @@ li p {
         border-radius: 0px;
     }
 
+    /*每個頁面的標題Tag (灰橘那個標題)*/
     .TabTag {
         width: 300px;
         height: 50px;
