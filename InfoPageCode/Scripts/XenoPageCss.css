@@ -175,17 +175,12 @@
 }
 
 
-
-
-
 @media screen and (max-width: 768px) {
 
     .InfoText {
         padding-top: 30px;
     }
 }
-
-
 
 
 /*  (max-width:480px) vs (min-width: 321px) and (max-width: 768px)*/

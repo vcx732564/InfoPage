@@ -20,21 +20,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!--自訂-->
-    <link href="Scripts/TestCss.css?a=6" rel="stylesheet" />
-    <!--百分比圓-->
-    <link href="Scripts/RotateStyle.css?a=5" rel="stylesheet" />
-    <!--下拉選單-->
-    <link href="Scripts/RV.css?a=1" rel="stylesheet" />
+    <!--全域的CSS-->
+    <link href="Scripts/XenoPageCss.css?a=1" rel="stylesheet" />
+    <!--InfoPage 百分比圓的CSS-->
+    <link href="Scripts/RotateStyle.css?a=1" rel="stylesheet" />
+    <!--InfoPage 個人資訊相關的CSS-->
+    <link href="Scripts/InfoSelect.css?a=1" rel="stylesheet" />
+
     <script>
-
-
         $(document).ready(function () {
             if (navigator.appVersion.indexOf('Chrome') <= -1) {
-                alert('請使用Chrome瀏覽器來體驗最佳的網頁瀏覽方式!');
+                alert('請使用Chrome瀏覽器來感受最佳網頁體驗!');
             }
         });
-
     </script>
 
 </head>
@@ -88,10 +86,8 @@
     <div class="Info_Page" id="PersonalInfo">
         <div id="AboutMeTag" class="TabTag">About Me</div>
         <div class="d-flex justify-content-center container">
-            <div>
-                <div style="height:30px;"></div>
+            <div><div style="height:30px;"></div></div>
 
-            </div>
             <div class="div_info1-1 ">
                 <ul class="tabs">
                     <li class="active" rel="tab1"><p>About Me</p></li>
@@ -100,10 +96,9 @@
                     <li rel="tab4"><p>Experience</p></li>
                 </ul>
             </div>
-            <div class="Space_Div">
 
-
-            </div>
+            <!--為了版面加的空白-->
+            <div class="Space_Div"></div>
 
             <!-- .tab_container -->
             <div class="tab_container">
@@ -119,93 +114,45 @@
                             </div>
 
                             <div class="col-sm-7 InfoText">
-
                                 <div class="row">
-
-                                    <div class="col-sm-3">
-                                        <p>姓名：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>曾Ｏ哲(Xeno Zheg)</p>
-                                    </div>
-
+                                    <div class="col-sm-3"><p>姓名：</p></div>
+                                    <div class="col-sm-9"><p>曾Ｏ哲(Xeno Zheg)</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>身分：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>台東蘭嶼達悟族</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>身分：</p></div>
+                                    <div class="col-sm-9"><p>台東蘭嶼達悟族</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>生日：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>1992/12/32</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>生日：</p></div>
+                                    <div class="col-sm-9"><p>1992/12/32</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>年齡：</p>
-
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>26歲</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>年齡：</p></div>
+                                    <div class="col-sm-9"><p>26歲</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>性別：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>男</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>性別：</p></div>
+                                    <div class="col-sm-9"><p>男</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>電話：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>0987654321</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>電話：</p></div>
+                                    <div class="col-sm-9"><p>0987654321</p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>E-Mail：</p>
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p><a href="mailto:2992@gmail.com">2992@gmail.com</a></p>
-                                    </div>
+                                    <div class="col-sm-3"><p>E-Mail：</p></div>
+                                    <div class="col-sm-9"><p><a href="mailto:2992@gmail.com">2992@gmail.com</a></p></div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <p>地址：</p>
-
-                                    </div>
-
-                                    <div class="col-sm-9">
-                                        <p>台東縣蘭嶼鄉囉囉囉啦啦啦哈哈哈哈</p>
-                                    </div>
+                                    <div class="col-sm-3"><p>地址：</p></div>
+                                    <div class="col-sm-9"><p>台東縣蘭嶼鄉囉囉囉啦啦啦哈哈哈哈</p></div>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -216,7 +163,6 @@
                         <div id="tab2" class="tab_content">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-2 ">
-
                                     <svg viewbox="0 0 36 36" class="circular-chart SqlColor">
                                         <path class="circle-bg"
                                               d="M18 2.0845
@@ -230,13 +176,10 @@
                                         <image xlink:href="Image\CodeIcon\sqlserver.png" height="15" width="14.5" x="11" y="8" />
                                         <text x="19" y="29" class="percentage">80%</text>
                                     </svg>
-
-
                                     <div style="text-align: center;"><p>SQL Server</p></div>
                                 </div>
 
                                 <div class="col-xs-6 col-sm-2">
-
                                     <svg viewbox="0 0 36 36" class="circular-chart CShapColor">
                                         <path class="circle-bg"
                                               d="M18 2.0845
@@ -250,7 +193,7 @@
                                         <image xlink:href="Image\CodeIcon\asp.netc.png" height="15" width="14.5" x="11" y="8" />
                                         <text x="19" y="29" class="percentage">70%</text>
                                     </svg>
-                                    <div style="text-align: center;"><p>ASP.NET(C#)</p></div>
+                                    <div style="text-align: center;"><p>ASP.NET(C#)<br />WEB Form</p></div>
                                 </div>
 
                                 <div class="col-xs-6 col-sm-2 ">
@@ -267,7 +210,7 @@
                                         <image xlink:href="Image\CodeIcon\asp.netVB.png" height="15" width="14.5" x="11" y="8" />
                                         <text x="19" y="29" class="percentage">80%</text>
                                     </svg>
-                                    <div style="text-align: center;"><p>ASP.NET(VB)</p></div>
+                                    <div style="text-align: center;"><p>ASP.NET(VB)<br />WEB Form</p></div>
                                 </div>
 
                                 <div class="col-xs-6 col-sm-2 ">
@@ -286,8 +229,7 @@
                                     </svg>
                                     <div style="text-align: center;"><p>ASP</p></div>
                                 </div>
-                                <!--</div>-->
-                                <!--<div class="row">-->
+
                                 <div class="col-xs-6 col-sm-2 ">
                                     <svg viewbox="0 0 36 36" class="circular-chart HTML5Color">
                                         <path class="circle-bg"
@@ -358,7 +300,6 @@
                                     </svg>
                                     <div style="text-align: center;"><p>jQuery</p></div>
                                 </div>
-                                <!-- </div>-->
                             </div>
                         </div>
 
@@ -367,10 +308,7 @@
                         <div class="tab_div">
                             <div id="tab3" class="tab_content">
                                 <h2>Tab 3 content</h2>
-
                             </div>
-
-
                         </div>
 
                         <!-- #tab4 -->
@@ -387,8 +325,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <div class="MainPage">
             <div id="MyStory" class="TabTag">My Story</div>
@@ -407,8 +343,6 @@
                     //        }
                     //    });
                     //});
-
-
                     $(window).scroll(function () {
 
                         if ($(this).scrollTop() > 1300) {
@@ -442,9 +376,6 @@
 
                     });
                 </script>
-
-
-
             </div>
         </div>
 
