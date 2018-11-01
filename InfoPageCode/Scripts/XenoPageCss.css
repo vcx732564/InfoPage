@@ -14,16 +14,15 @@
     background-size: cover;
     content: " ";
     width: auto;
-    height:1080px;
+    height: 100%;
     max-width: 100%;
-
 }
 
 /*遮罩*/
 .BlackBackground {
     background: rgba(0,0,0,.7);
     width: auto;
-    height: 1080px;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -47,7 +46,7 @@
     background-size: cover;
     content: " ";
     width: auto;
-    height: 800px;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
 }
