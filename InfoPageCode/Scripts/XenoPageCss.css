@@ -1,5 +1,6 @@
 ﻿body {
-    background: url(../Image/XB2.png) center center fixed no-repeat;
+    /*background: url(../Image/XB2.png) center center fixed no-repeat;*/
+    background-color: white;
     background-size: cover;
     width: auto;
     height: auto;
@@ -122,9 +123,24 @@
 
 /*Info 頁面*/
 .Info_Page {
-    background: rgba(255,255,255,.2);
+    /*background: -webkit-linear-gradient(left,#98D6B5,#FFFFFF);
+    background: -o-linear-gradient(right,#98D6B5,#FFFFFF);
+    background: -moz-linear-gradient(right,#98D6B5,#FFFFFF);
+    background: linear-gradient(to right,#98D6B5,#FFFFFF);*/
+
+    /*background-color:white;*/
+
+    /*background: linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);
+    background: -moz-linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);
+    background: -webkit-linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);
+    background: -o-linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);*/
+
+    background: linear-gradient(50deg, #212121 45%, #D95353 94%);
+    background: -moz-linear-gradient(50deg, #212121 45%, #D95353 94%);
+    background: -webkit-linear-gradient(50deg, #212121 45%, #D95353 94%);
+    background: -o-linear-gradient(50deg, #212121 45%, #D95353 94%);
     content: " ";
-    height: 823px;
+    height: 720px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -173,10 +189,9 @@
     height: 100px;
 }
 
-li > p > img{
-    margin-top:-8px;
-    margin-right:8px;
-
+li > p > img {
+    margin-top: -8px;
+    margin-right: 8px;
 }
 
 
