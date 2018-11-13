@@ -135,10 +135,10 @@
     background: -webkit-linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);
     background: -o-linear-gradient(50deg, #CFCFCF 45%, #F7F7F7 94%);*/
 
-    background: linear-gradient(50deg, #212121 45%, #D95353 94%);
-    background: -moz-linear-gradient(50deg, #212121 45%, #D95353 94%);
-    background: -webkit-linear-gradient(50deg, #212121 45%, #D95353 94%);
-    background: -o-linear-gradient(50deg, #212121 45%, #D95353 94%);
+    background: linear-gradient(50deg, #212121 45%, #ffbb77 94%);
+    background: -moz-linear-gradient(50deg, #212121 45%, #ffbb77 94%);
+    background: -webkit-linear-gradient(50deg, #212121 45%, #ffbb77 94%);
+    background: -o-linear-gradient(50deg, #212121 45%, #ffbb77 94%);
     content: " ";
     height: 720px;
     font-family: 'Noto Sans TC', sans-serif;
