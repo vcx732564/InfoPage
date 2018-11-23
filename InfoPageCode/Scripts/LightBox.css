@@ -53,7 +53,8 @@
 .modal-body {
     padding: 2px 16px;
     overflow-y: scroll;
-    max-height: 350px;
+    /*vh = 依視窗大小的%數 70vh = 視窗大小的70%*/
+    max-height: 70vh;
 }
 
 .modal-header > h2 ,.modal-header > h4{
