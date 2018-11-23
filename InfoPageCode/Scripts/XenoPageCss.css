@@ -7,6 +7,17 @@
     max-width: 100%;
     max-height: 100%;
     -webkit-overflow-scrolling: touch;
+
+}
+
+/*給專門的英文用的字體*/
+.font-family-For-E{
+    font-family: 'Audiowide', cursive;
+}
+
+/*給英文混中文用的字體*/
+.font-family-for-E-And-C{
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 /* 背景圖 */
@@ -43,7 +54,8 @@
 
 /*MainPage*/
 .MainPage {
-    background: url(../Image/XB2_DLC.jpg) center center;
+    /*background: url(../Image/XB2_DLC.jpg) center center;*/
+    background:#ffbb77;
     background-size: cover;
     content: " ";
     width: auto;
@@ -56,7 +68,7 @@
 #myNavbar a {
     color: white;
     background: rgba(0,0,0,.0);
-    font-family: 'Viga', sans-serif;
+    
 }
     /*功能按鈕*/
     #myNavbar a::after {
@@ -80,7 +92,7 @@
     color: white;
     font-size: 50px;
     padding-top: 30px;
-    font-family: 'Viga', sans-serif;
+    font-family: 'Audiowide', cursive;
 }
     /*網頁標題 Mouseover*/
     .NavBar_Setting a:hover {
@@ -118,6 +130,7 @@
 /*電腦模式 子清單*/
 .navbar-nav > li > .dropdown-menu {
     background: rgba(255,119,0,.95);
+
 }
 
 
@@ -172,7 +185,7 @@
     background: rgba(255,119,0,.6);
     color: #FAFCFD;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1;
     display: none;
     font-weight: bold;
 }
@@ -277,5 +290,6 @@ li > p > img {
     /*Info資訊 為了跟4個按鈕隔開的空格*/
     .Space_Div {
         height: 30px;
+
     }
 }
