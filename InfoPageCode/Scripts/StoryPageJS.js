@@ -19,7 +19,8 @@ btn.onclick = function () {
         //成功時做的事情
         success: function (data) {
             $("#TestTxt").html(data);
-            $("#testh2").html("第一章");
+            $("#chapter_title").html("第一章");
+            $("#chapter_content").html("出生至國小");
         },
         //失敗時做的事情
         error: function (xhr, ajaxOptions, thrownError) {
@@ -42,7 +43,8 @@ $("#myBtn2").click(function () {
         //成功時做的事情
         success: function (data) {
             $("#TestTxt").html(data);
-            $("#testh2").html("第二章");
+            $("#chapter_title").html("第二章"); 
+            $("#chapter_content").html("國中至高中時期");
         },
         //失敗時做的事情
         error: function (xhr, ajaxOptions, thrownError) {
