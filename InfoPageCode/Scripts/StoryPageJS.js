@@ -18,7 +18,7 @@ btn.onclick = function () {
         dataType: "text",
         //成功時做的事情
         success: function (data) {
-            $("#TestTxt").html(data);
+            $("#StoryContent").html(data);
             $("#chapter_title").html("第一章");
             $("#chapter_content").html("出生至國小");
         },
@@ -42,7 +42,7 @@ $("#myBtn2").click(function () {
         dataType: "text",
         //成功時做的事情
         success: function (data) {
-            $("#TestTxt").html(data);
+            $("#StoryContent").html(data);
             $("#chapter_title").html("第二章"); 
             $("#chapter_content").html("國中至高中時期");
         },

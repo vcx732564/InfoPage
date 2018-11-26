@@ -55,7 +55,8 @@
 /*MainPage*/
 .MainPage {
     /*background: url(../Image/XB2_DLC.jpg) center center;*/
-    background:#ffbb77;
+    /*background:#ffbb77;*/
+    background-color:black;
     background-size: cover;
     content: " ";
     width: auto;
