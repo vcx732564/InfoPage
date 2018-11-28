@@ -13,20 +13,20 @@
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 
 /* Modal Content */
 .modal-content {
-	top:3%;
-    left:5%;
+    top: 3%;
+    left: 5%;
     position: fixed;
     background-color: #fefefe;
     width: 90%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 
 /* The Close Button */
@@ -37,19 +37,22 @@
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        /*放大動畫*/
+        /*transform: scale(1.4);*/
+        /*transition: 0.5s;*/
+    }
 
 .modal-header {
     padding: 2px 16px;
-    background:rgba(255,119,0,1);
+    background: rgba(255,119,0,1);
     color: white;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .modal-body {
@@ -59,29 +62,61 @@
     max-height: 70vh;
 }
 
-.modal-header > h2 ,.modal-header > h4{
+.modal-header > h2, .modal-header > h4 {
     font-family: 'Noto Sans TC', sans-serif;
 }
+
+
+/*這邊跟LightBox無關*/
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .StoryRightDiv {
+        display:none;
+    }
+}
+
+
+
 
 
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-    from { opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

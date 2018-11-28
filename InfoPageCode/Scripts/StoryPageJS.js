@@ -66,3 +66,18 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+
+
+
+//網頁滾動時要做的動畫
+$(window).scroll(function () {
+    if ($(this).scrollTop() > $("div[class=MainPage]").offset().top - 150) {
+        $('#myBtn').fadeIn("fast");
+        $('#myBtn2').fadeIn("fast");
+    } else {
+        $('#myBtn').fadeOut("fast");
+        $('#myBtn2').fadeOut("fast");
+    }
+});
+

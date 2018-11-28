@@ -26,7 +26,8 @@ $(".tab_drawer_heading").click(function () {
     //判斷目前文字框是否是開啟狀態
     var now_Text_Area = $(this).attr('rel');
     if ($('#' + now_Text_Area).is(":hidden")) {
-        $(".tab_content").fadeOut();
+        //$(".tab_content").fadeOut();
+        $(".tab_content").hide();
 
         var d_activeTab = $(this).attr("rel");
         $("#" + d_activeTab).fadeIn();
@@ -48,7 +49,8 @@ $(".tab_drawer_heading").click(function () {
 
         //關閉文字區塊
         $('#' + now_Text_Area).hide();
-        $(".Info_Page").height(String(530) + 'px');
+        $(".Info_Page").animate({ height: 500 });
+        //$(".Info_Page").height(String(530) + 'px');
 
     }
 
