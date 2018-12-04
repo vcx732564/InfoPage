@@ -92,7 +92,7 @@
 }
 /*===============此區為百分比圓圈的顏色 End ==============*/
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .circular-chart {
         /*決定圓的大小*/
         max-width: 100px;
