@@ -72,7 +72,7 @@ window.onclick = function (event) {
 
 //網頁滾動時要做的動畫
 $(window).scroll(function () {
-    if ($(this).scrollTop() > $("div[class=MainPage]").offset().top - 150) {
+    if ($(this).scrollTop() > $("div[class=StoryPage]").offset().top - 150) {
 
         $('div[id^=StoryChapter]').each(function () {
 

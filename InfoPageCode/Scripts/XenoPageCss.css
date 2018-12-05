@@ -3,7 +3,7 @@
     background-color: white;
     background-size: cover;
     width: auto;
-    height: auto;
+    height: 100vh;
     max-width: 100%;
     max-height: 100%;
     -webkit-overflow-scrolling: touch;
@@ -51,8 +51,8 @@
     padding-top: 20px;
 }
 
-/*MainPage*/
-.MainPage {
+/*StoryPage*/
+.StoryPage {
     /*background: url(../Image/XB2_DLC.jpg) center center;*/
     background: rgba(0,0,0,.2);
     /*background-color:black;*/
@@ -248,7 +248,9 @@ li > p > img {
 
 /*  (max-width:480px) vs (min-width: 321px) and (max-width: 768px)*/
 @media screen and (max-width: 768px) {
-    .MainPage {
+
+    /*手機版 自傳Page更換背景 InfoPage改成伸縮是 會影響背景圖大小縮放*/
+    .StoryPage {
         background: rgba(0,0,0,1);
         background: url(../Image/XB2_DLC.jpg) center center fixed no-repeat;
         
