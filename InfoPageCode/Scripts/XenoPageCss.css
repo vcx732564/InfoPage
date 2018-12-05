@@ -59,7 +59,7 @@
     background-size: cover;
     content: " ";
     width: auto;
-    height: auto + 20px;
+    height: auto;
     max-width: 100%;
 }
 
@@ -248,6 +248,12 @@ li > p > img {
 
 /*  (max-width:480px) vs (min-width: 321px) and (max-width: 768px)*/
 @media screen and (max-width: 768px) {
+    .MainPage {
+        background: rgba(0,0,0,1);
+        background: url(../Image/XB2_DLC.jpg) center center fixed no-repeat;
+        
+    }
+
 
     /*標題文字*/
     .NavBar_Setting a {
