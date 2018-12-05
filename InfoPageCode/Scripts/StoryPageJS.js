@@ -2,7 +2,7 @@
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("StoryChapter1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -28,7 +28,7 @@ btn.onclick = function () {
         }
     });
     modal.style.display = "block";
-
+    return true;
 }
 
 $("#myBtn2").click(function () {
@@ -73,11 +73,87 @@ window.onclick = function (event) {
 //網頁滾動時要做的動畫
 $(window).scroll(function () {
     if ($(this).scrollTop() > $("div[class=MainPage]").offset().top - 150) {
-        $('#myBtn').fadeIn("fast");
-        $('#myBtn2').fadeIn("fast");
+
+        $('div[id^=StoryChapter]').each(function () {
+
+            var ShowSpeed = parseInt($(this).attr('Showspeed'));
+
+            if ($(this).attr('fadeIn') == "N") {
+                $(this).animate({
+                    opacity: 1,
+                    left: '-=30'
+                }, ShowSpeed, function () {
+                    // Animation complete.
+                });
+
+                $(this).attr('fadeIn', 'Y')
+            }
+
+
+        });
+
+        //if ($('#test1').attr('fadeIn')=="N") {
+        //    $('#test1').animate({
+        //        opacity: 1,
+        //        left: '-=50'
+        //    }, 400, function () {
+        //        // Animation complete.
+        //    });
+
+        //    $('#test1').attr('fadeIn','Y')
+        //}
+        
+
+        //if ($('#test2').attr('fadeIn') == "N") {
+        //    $('#test2').animate({
+        //        opacity: 1,
+        //        left: '-=50'
+        //    }, 500, function () {
+        //        // Animation complete.
+        //    });
+
+        //    $('#test2').attr('fadeIn', 'Y')
+        //}
     } else {
-        $('#myBtn').fadeOut("fast");
-        $('#myBtn2').fadeOut("fast");
+        $('div[id^=StoryChapter]').each(function () {
+
+            var ShowSpeed = parseInt($(this).attr('Showspeed'));
+
+            if ($(this).attr('fadeIn') == "Y") {
+                $(this).animate({
+                    opacity: 0,
+                    left: "+=30"
+                }, ShowSpeed, function () {
+                    // Animation complete.
+                });
+
+                $(this).attr('fadeIn', 'N')
+            }
+
+        });
+
+
+        //if ($('#test1').attr('fadeIn') == "Y") {
+        //    $('#test1').animate({
+        //        opacity: 0,
+        //        left: "+=50"
+        //    }, 400, function () {
+        //        // Animation complete.
+        //    });
+
+        //    $('#test1').attr('fadeIn', 'N')
+        //}
+
+        //if ($('#test2').attr('fadeIn') == "Y") {
+        //    $('#test2').animate({
+        //        opacity: 0,
+        //        left: "+=50"
+        //    }, 500, function () {
+        //        // Animation complete.
+        //    });
+
+        //    $('#test2').attr('fadeIn', 'N')
+        //}
     }
 });
 

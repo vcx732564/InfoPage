@@ -1,5 +1,5 @@
 ﻿body {
-    /*background: url(../Image/XB2.png) center center fixed no-repeat;*/
+    background: url(../Image/XB2.png) center center fixed no-repeat;
     background-color: white;
     background-size: cover;
     width: auto;
@@ -54,12 +54,12 @@
 /*MainPage*/
 .MainPage {
     /*background: url(../Image/XB2_DLC.jpg) center center;*/
-    background: #ffbb77;
+    background: rgba(0,0,0,.2);
     /*background-color:black;*/
     background-size: cover;
     content: " ";
     width: auto;
-    height: 650px;
+    height: auto + 20px;
     max-width: 100%;
 }
 
@@ -200,23 +200,25 @@ li > p > img {
 
 /*================Story 相關==================*/
 .StoryChapter {
-    content: " ";
+    
     height: 290px;
     width: 290px;
     /*讓Grid置中*/
     display: inline-block;
     float: none;
+    border-radius:5px;
+    
+    
 }
 
 .StoryRow {
-    background-color: black;
     /*讓Grid置中*/
     text-align: center;
 }
 
 @media screen and (min-width:480px) and (max-width:670px) {
     .StoryChapter {
-        content: " ";
+        
         height: 200px;
         width: 200px;
     }
@@ -225,7 +227,7 @@ li > p > img {
 
 @media screen and (max-width:479px) {
     .StoryChapter {
-        content: " ";
+        
         height: 142px;
         width: 142px;
     }
