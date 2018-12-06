@@ -43,7 +43,7 @@ $("#myBtn2").click(function () {
         //成功時做的事情
         success: function (data) {
             $("#StoryContent").html(data);
-            $("#chapter_title").html("第二章"); 
+            $("#chapter_title").html("第二章");
             $("#chapter_content").html("國中至高中時期");
         },
         //失敗時做的事情
@@ -77,83 +77,46 @@ $(window).scroll(function () {
         $('div[id^=StoryChapter]').each(function () {
 
             var ShowSpeed = parseInt($(this).attr('Showspeed'));
-
+            
             if ($(this).attr('fadeIn') == "N") {
+                
                 $(this).animate({
-                    opacity: 1,
-                    left: '-=30'
+                    opacity: 0.8,
+                    //left: '-=30'
                 }, ShowSpeed, function () {
-                    // Animation complete.
+                    //$(this).css({ "transform": "translate(0px)" });
+                    //$(this).animate({ "opacity": "0.8" });
+                    //$(this).removeClass('StoryChapterOut');
+                    //$(this).addClass('StoryChapterIn');
+                    $(this).attr('fadeIn', 'Y');
                 });
-
-                $(this).attr('fadeIn', 'Y')
+               
             }
-
-
         });
 
-        //if ($('#test1').attr('fadeIn')=="N") {
-        //    $('#test1').animate({
-        //        opacity: 1,
-        //        left: '-=50'
-        //    }, 400, function () {
-        //        // Animation complete.
-        //    });
-
-        //    $('#test1').attr('fadeIn','Y')
-        //}
-        
-
-        //if ($('#test2').attr('fadeIn') == "N") {
-        //    $('#test2').animate({
-        //        opacity: 1,
-        //        left: '-=50'
-        //    }, 500, function () {
-        //        // Animation complete.
-        //    });
-
-        //    $('#test2').attr('fadeIn', 'Y')
-        //}
     } else {
         $('div[id^=StoryChapter]').each(function () {
 
             var ShowSpeed = parseInt($(this).attr('Showspeed'));
-
+           
             if ($(this).attr('fadeIn') == "Y") {
+                
                 $(this).animate({
                     opacity: 0,
-                    left: "+=30"
+                    //left: "+=30"
                 }, ShowSpeed, function () {
-                    // Animation complete.
+                    //$(this).css({ "transform": "translate(30px)" });
+                    //$(this).animate({ "opacity": "0" });
+                    //$(this).removeClass('StoryChapterIn');
+                    //$(this).addClass('StoryChapterOut');
+                    $(this).attr('fadeIn', 'N');
                 });
 
-                $(this).attr('fadeIn', 'N')
+                
             }
 
         });
 
-
-        //if ($('#test1').attr('fadeIn') == "Y") {
-        //    $('#test1').animate({
-        //        opacity: 0,
-        //        left: "+=50"
-        //    }, 400, function () {
-        //        // Animation complete.
-        //    });
-
-        //    $('#test1').attr('fadeIn', 'N')
-        //}
-
-        //if ($('#test2').attr('fadeIn') == "Y") {
-        //    $('#test2').animate({
-        //        opacity: 0,
-        //        left: "+=50"
-        //    }, 500, function () {
-        //        // Animation complete.
-        //    });
-
-        //    $('#test2').attr('fadeIn', 'N')
-        //}
     }
 });
 
