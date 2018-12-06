@@ -200,7 +200,7 @@ li > p > img {
 
 /*================Story 相關==================*/
 .StoryChapter {
-    background:rgba(255,119,0,.8);
+    background:rgba(255,119,0,1);
     height: 290px;
     width: 290px;
     /*讓Grid置中*/

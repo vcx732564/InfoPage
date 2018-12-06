@@ -81,15 +81,16 @@ $(window).scroll(function () {
             if ($(this).attr('fadeIn') == "N") {
                 
                 $(this).animate({
-                    opacity: 0.8,
+                    opacity: 1,
                     //left: '-=30'
                 }, ShowSpeed, function () {
                     //$(this).css({ "transform": "translate(0px)" });
                     //$(this).animate({ "opacity": "0.8" });
                     //$(this).removeClass('StoryChapterOut');
                     //$(this).addClass('StoryChapterIn');
-                    $(this).attr('fadeIn', 'Y');
+                    
                 });
+                $(this).attr('fadeIn', 'Y');
                
             }
         });
@@ -109,9 +110,9 @@ $(window).scroll(function () {
                     //$(this).animate({ "opacity": "0" });
                     //$(this).removeClass('StoryChapterIn');
                     //$(this).addClass('StoryChapterOut');
-                    $(this).attr('fadeIn', 'N');
+                    
                 });
-
+                $(this).attr('fadeIn', 'N');
                 
             }
 
