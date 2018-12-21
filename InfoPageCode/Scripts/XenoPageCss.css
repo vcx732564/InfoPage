@@ -212,15 +212,6 @@ li > p > img {
     
 }
 
-.StoryChapterOut{
-    transform:translate(30px);
-    opacity: 0;
-}
-
-.StoryChapterIn{
-    transform:translate(0px);
-    opacity: 0.8;
-}
 
 /*放大*/
 .StoryChapter:hover {

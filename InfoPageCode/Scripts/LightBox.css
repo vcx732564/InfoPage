@@ -1,16 +1,16 @@
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    display: none;                     /* Hidden by default */
+    position: fixed;                   /* Stay in place */
+    z-index: 2;                        /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    width: 100%;                       /* Full width */
+    height: 100%;                      /* Full height */
+    overflow: auto;                    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);      /* Fallback color */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-name: fadeIn;    /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
@@ -66,19 +66,10 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+#StoryContent p {
 
-/*這邊跟LightBox無關*/
-
-@media screen and (max-width: 768px) {
-    .StoryRightDiv {
-        display:none;
-    }
+    text-indent : 2em ;
 }
-
-
-
-
-
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
