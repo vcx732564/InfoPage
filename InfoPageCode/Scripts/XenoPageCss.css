@@ -201,8 +201,8 @@ li > p > img {
 /*================Story 相關==================*/
 .StoryChapter {
     background: rgba(255,119,0,1);
-    height: 290px;
-    width: 290px;
+    height: 400px;
+    width: 400px;
     /*讓Grid置中*/
     display: inline-block;
     float: none;
@@ -220,6 +220,13 @@ li > p > img {
 .StoryRow {
     /*讓Grid置中*/
     text-align: center;
+}
+
+@media screen and (min-width:670px) and (max-width:1400px) {
+    .StoryChapter {
+        height: 280px;
+        width: 280px;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width:670px) {

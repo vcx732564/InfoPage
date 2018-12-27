@@ -10,7 +10,6 @@ ul.tabs {
     justify-content: center;
     text-align: center;
     padding-left: 10px;
-
 }
 
     ul.tabs li {
@@ -23,12 +22,11 @@ ul.tabs {
         color: #ccc;
         border-radius: 5px;
         margin-right: 10px;
-
     }
 
 
         ul.tabs li:hover {
-            background-color:#ffbb77;
+            background-color: #ffbb77;
             color: #333;
         }
 
@@ -74,23 +72,27 @@ li p {
 
 .InfoText {
     border-radius: 3px;
-    float: left;
+
 }
 
-.col-sm-3 > p {
+.col-sm-3 > p, .col-xs-4 > p {
     font-size: 24px;
     font-weight: bold;
 }
 
-.col-sm-9 > p {
+.col-sm-9 > p, .col-xs-8 > p {
     font-size: 20px;
 }
 
 .PhotoDiv {
     text-align: center;
     padding-top: 40px;
+    margin-top: 1.5%;
 }
 
+.row {
+    margin-top: 5px;
+}
 
 /*每個頁面的標題Tag (灰橘那個標題)*/
 .TabTag {
@@ -151,5 +153,19 @@ li p {
 
     #tab1, #tab2, #tab3, #tab4 {
         height: auto;
+    }
+
+    .PhotoDiv {
+        padding-top: 0px;
+    }
+
+
+    .col-sm-3 > p, .col-xs-2 > p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .col-sm-9 > p, .col-xs-10 > p {
+        font-size: 16px;
     }
 }
