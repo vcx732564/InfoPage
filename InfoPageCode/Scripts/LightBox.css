@@ -19,10 +19,10 @@
 /* Modal Content */
 .modal-content {
     top: 3%;
-    left: 5%;
+    left: 15%;
     position: fixed;
     background-color: #fefefe;
-    width: 90%;
+    width: 70%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -69,6 +69,13 @@
 /*設定文字檔換行*/
 #StoryContent p {
     text-indent: 2em;
+}
+
+@media screen and (max-width:768px) {
+    .modal-content {
+        left: 5%;
+        width: 90%;
+    }
 }
 
 /* Add Animation */
