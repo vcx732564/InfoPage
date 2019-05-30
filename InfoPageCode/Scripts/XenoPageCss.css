@@ -1,5 +1,5 @@
 ﻿body {
-    background: url(../Image/XB2.png) center center fixed no-repeat;
+    background: url(../Image/Lanyu2.JPG) center center fixed no-repeat;
     background-color: white;
     background-size: cover;
     width: auto;
@@ -58,7 +58,7 @@
 
 /* 背景圖 */
 .Image_Background {
-    background: url(../Image/XB1.jpg) center center;
+    background: url(../Image/Lanyu1.png) center center;
     background-size: cover;
     content: " ";
     width: auto;
