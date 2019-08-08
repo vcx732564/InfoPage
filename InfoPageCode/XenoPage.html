@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
     <!--jQuery-->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Bootstrap 3-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -27,7 +27,9 @@
     <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
     <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>-->
-    
+    <!--Easy Scrolling Smooth-->
+    <script src="Scripts/jquery.nicescroll.min.js"></script>
+
     <!--全域的CSS-->
     <link href="Scripts/XenoPageCss.css?a=3" rel="stylesheet" />
     <!--InfoPage 百分比圓的CSS-->
@@ -36,10 +38,14 @@
     <link href="Scripts/InfoSelect.css?a=1" rel="stylesheet" />
     <!--Lightbox CSS-->
     <link href="Scripts/LightBox.css?a=1" rel="stylesheet" />
+    
 
     <script>
         $(document).ready(function () {
 
+            //滑順古溜的柔動感
+            $("body").niceScroll();
+            
             if (navigator.appVersion.indexOf('Chrome') <= -1) {
                 alert('請使用Chrome瀏覽器來感受最佳的網頁體驗!');
             }
@@ -437,17 +443,17 @@
                     </p>
                 </div>
                 <div class="clearfix visible-lg" style="margin-bottom:50px;"></div>
-                <div id="StoryChapter4" class=" col-xs-6 col-sm-4 StoryChapter" fadein="N" showspeed="500">
+                <div id="StoryChapter4" class=" col-xs-6 col-sm-3 StoryChapter" fadein="N" showspeed="500">
                     <p class="font-family-For-E" style="float: left; padding: 10px; font-size: 16px; color: #FFFFFF">
                         Chapter 4
                     </p>
                 </div>
-                <div id="StoryChapter5" class=" col-xs-6 col-sm-4 StoryChapter" fadein="N" showspeed="600">
+                <div id="StoryChapter5" class=" col-xs-6 col-sm-3 StoryChapter" fadein="N" showspeed="600">
                     <p class="font-family-For-E" style="float: left; padding: 10px; font-size: 16px; color: #FFFFFF">
                         Chapter 5 
                     </p>
                 </div>
-                <div id="StoryChapter6" class="col-xs-6 col-sm-4 StoryChapter" fadein="N" showspeed="700">
+                <div id="StoryChapter6" class="col-xs-6 col-sm-3 StoryChapter" fadein="N" showspeed="700">
                     <p class="font-family-For-E" style="float: left; padding: 10px; font-size: 16px; color: #FFFFFF">
                         Chapter 6
                     </p>
