@@ -43,8 +43,43 @@
     <script>
         $(document).ready(function () {
 
-            //滑順古溜的柔動感
-            $("body").niceScroll();
+            function isMobile() {
+                var userAgentInfo = navigator.userAgent;
+
+                var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+
+                var mobile_flag = false;
+
+                //根據userAgent判斷是否是手機
+                for (var v = 0; v < mobileAgents.length; v++) {
+                    if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+                        mobile_flag = true;
+                        break;
+                    }
+                }
+
+                var screen_width = window.screen.width;
+                var screen_height = window.screen.height;
+
+                //根據屏幕分辨率判斷是否是手機
+                if (screen_width < 500 && screen_height < 800) {
+                    mobile_flag = true;
+                }
+
+                return mobile_flag;
+            }
+
+            $(function () {
+                var mobile_flag = isMobile(); // true爲PC端，false爲手機端
+
+                if (mobile_flag) {
+                    //滑順古溜的柔動感
+                    $("body").niceScroll();
+                }
+            });
+
+           
+            
             
             if (navigator.appVersion.indexOf('Chrome') <= -1) {
                 alert('請使用Chrome瀏覽器來感受最佳的網頁體驗!');
