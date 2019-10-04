@@ -1,5 +1,5 @@
 ﻿body {
-    background: url(../Image/Lanyu2.JPG) center center fixed no-repeat;
+    background: url(../Image/Lanyux.JPG) center center fixed no-repeat;
     background-color: white;
     background-size: cover;
     width: auto;
@@ -240,9 +240,13 @@ li > p > img {
     background: rgba(255,145,36,1);
     height: 400px;
     width: 400px;
-    /*讓Grid置中*/
+    
     display: inline-block;
     float: none;
+     /*讓Grid置中   
+    display:flexbox;
+    flex-wrap:wrap;
+         */
     border-radius: 5px;
     margin: 8px;
     transition: transform .2s; /* Animation */
@@ -251,12 +255,13 @@ li > p > img {
 
     /*放大*/
     .StoryChapter:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
 .StoryRow {
     /*讓Grid置中*/
     text-align: center;
+    
 }
 
 @media screen and (min-width:670px) and (max-width:1400px) {
