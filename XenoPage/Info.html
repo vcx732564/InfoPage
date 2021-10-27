@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link linkMark="css" href="assets/css/main.css?a=1" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="Image_Background">
+        <div class="BlackBackground">
+            <div class="menucontainer">
+                <div class="leftmenu">
+                    <div class="closebtn">
+                        X
+                    </div>
+                    <ul id="menuUl" class="leftul">
+                        <li class="current-active"><a>home</a></li>
+                        <li><a>new</a></li>
+                        <li><a>products</a></li>
+                        <li><a>about</a></li>
+                    </ul>
+                </div>
+                <nav class="menu">
+                    <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
+                    <div class="menu-logo"><a>LOGO</a></div>
+                    <ul id="menuUl" class="">
+                        <li class="current-active"><a>home</a></li>
+                        <li><a>new</a></li>
+                        <li><a>products</a></li>
+                        <li><a>about</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- ======= Hero Section ======= -->
+            <section id="hero" class="d-flex flex-column justify-content-center">
+                <div class="container" data-aos="zoom-in" data-aos-delay="100">
+                    <h1>Brandon Johnson</h1>
+                    <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+                </div>
+            </section>
+            <!-- End Hero -->
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script linkMark="js" src="assets/js/main.js?a=1"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+
+    <script type="text/javascript">
+        //動態更新CSS
+        $("[linkMark=css]").each(function (index) {
+            $(this).attr('href', $(this).attr('href').replace('?a=1', '?a=' + Date.now()));
+        });
+
+        //動態更新JS
+        $("[linkMark=js]").each(function (index) {
+            $(this).attr('src', $(this).attr('src').replace('?a=1', '?a=' + Date.now()));
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
