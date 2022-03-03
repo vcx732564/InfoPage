@@ -1,26 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InfoPage", ".", "{411683EC-108B-4173-A330-6E913FC529EF}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InfoPageCode", ".", "{411683EC-108B-4173-A330-6E913FC529EF}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1930"
-		Debug.AspNetCompiler.PhysicalPath = "D:\CodingFile\InfoPage\"
+		Debug.AspNetCompiler.PhysicalPath = "..\InfoPageCode\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1930\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_1930"
-		Release.AspNetCompiler.PhysicalPath = "D:\CodingFile\InfoPage\"
+		Release.AspNetCompiler.PhysicalPath = "..\InfoPageCode\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1930\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1930"
+		SlnRelativePath = "..\InfoPageCode\"
 	EndProjectSection
 EndProject
 Global
@@ -33,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E2437A6-FCDA-46C4-AE5D-D2EFDDA975A6}
 	EndGlobalSection
 EndGlobal
