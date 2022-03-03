@@ -154,6 +154,10 @@ body > section {
             font-size: 20px;
             line-height: 24px;
         }
+
+    .skill_img_1 {
+        display: none;
+    }
 }
 
 
@@ -241,6 +245,8 @@ body > section {
         .leftul li:hover {
             cursor: pointer;
         }
+
+
 }
 
 /*   
@@ -295,10 +301,11 @@ li span, li strong {
 
 */
 .skills .progress {
-    height: 60px;
+    height: 70px;
     display: block;
     background: none;
     border-radius: 0;
+    font-size:16px;
 }
 
     .skills .progress .skill {
@@ -325,5 +332,29 @@ li span, li strong {
     height: 10px;
     transition: 0.9s;
     background-color: #FF5757;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+
+.skill_img_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+}
+
+    .skill_img_1 img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        .skill_img_1 {
+            display: none;
+        }
+    }
 
