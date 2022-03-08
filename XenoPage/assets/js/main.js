@@ -17,6 +17,9 @@ $('.closebtn').click(function () {
 })
 
 
+
+
+
 /**
    * Hero type effect
    */
@@ -64,4 +67,4 @@ if (skilsContent) {
     })
 }
 
-
+// $('nav[class=menu]')
