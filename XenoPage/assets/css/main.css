@@ -9,7 +9,7 @@ html{
 body {
     margin: 0px;
     padding: 0px;
-    background: url(../image/Lanyu002.jpg) center center fixed no-repeat;
+    background: url(../image/Lanyu002.JPG) center center fixed no-repeat;
     /*�ưʮĪG*/
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -296,6 +296,7 @@ body > section {
 .title_img {
     width: 40px;
     height: 40px;
+    content: url('../image/boateye30x30.png');
 }
 
 
