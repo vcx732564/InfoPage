@@ -10,6 +10,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: url(../image/Lanyu002.JPG) center center fixed no-repeat;
+    background-size: cover;
     /*�ưʮĪG*/
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
