@@ -7,51 +7,104 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link linkMark="css" href="assets/css/main.css?a=1" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 
 </head>
 <body>
+    <pre style="display:none">
+                                                      ░░░░░▄▄▀▀▀▀▀▀▀▀▀▄▄░░░░░
+            ░░░░░░░░░░░▄▄█▀▀▄░░░░                     ░░░░█░░░░░░░░░░░░░█░░░░
+            ░░░░░░░░▄█████▄▄█▄░░░░  吃我的洛克砲拉     ░░░█░░░░░░░░░░▄▄▄░░█░░░  歡迎來到這裡
+            ░░░░░▄▄▄▀██████▄▄██░░░░                   ░░░█░░▄▄▄░░▄░░███░░█░░░
+            ░░▄██░░█░█▀░░▄▄▀█░█░░░▄▄▄▄                ░░░▄█░▄░░░▀▀▀░░░▄░█▄░░░
+            ▄█████░░██░░░▀▀░▀░█▀▀██▀▀▀█▀▄             ░░░█░░▀█▀█▀█▀█▀█▀░░█░░░
+            █████░█░░▀█░▀▀▀▀▄▀░░░███████▀             ░░░▄██▄▄▀▀▀▀▀▀▀▄▄██▄░░░
+            ░▀▀█▄░██▄▄░▀▀▀▀█▀▀▀▀▀░▀▀▀▀                ░▄█░█▀▀█▀▀▀█▀▀▀█▀▀█░█▄░
+            ░▄████████▀▀▀▄▀░░░░                       ▄▀░▄▄▀▄▄▀▀▀▄▀▀▀▄▄▀▄▄░▀▄
+            ██████░▀▀█▄░░░█▄░░░░                      █░░░░▀▄░█▄░░░▄█░▄▀░░░░█
+            ░▀▀▀▀█▄▄▀░██████▄░░░░                     ░▀▄▄░█░░█▄▄▄▄▄█░░█░▄▄▀░
+            ░░░░░░░░░█████████░░░░                    ░░░▀██▄▄███████▄▄██▀░░░
+                                                      ░░░████████▀████████░░░
+                                                      ░░▄▄█▀▀▀▀█░░░█▀▀▀▀█▄▄░░
+                                                      ░░▀▄▄▄▄▄▀▀░░░▀▀▄▄▄▄▄▀░░﻿
+            ░░█▀░░░░░░░░░░░▀▀███████░░░░                
+            ░░█▌░░░░░░░░░░░░░░░▀██████░░░ 
+            ░█▌░░░░░░░░░░░░░░░░███████▌░░ 
+            ░█░░░░░░░░░░░░░░░░░████████░░   
+            ▐▌░░░░░░░░░░░░░░░░░▀██████▌░░ 
+            ░▌▄███▌░░░░▀████▄░░░░▀████▌░░  看來大哥也是喜歡看原始碼的同道中人呢
+            ▐▀▀▄█▄░▌░░░▄██▄▄▄▀░░░░████▄▄░ 
+            ▐░▀░░═▐░░░░░░══░░▀░░░░▐▀░▄▀▌▌ 
+            ▐░░░░░▌░░░░░░░░░░░░░░░▀░▀░░▌▌ 
+            ▐░░░▄▀░░░▀░▌░░░░░░░░░░░░▌█░▌▌ 
+            ░▌░░▀▀▄▄▀▀▄▌▌░░░░░░░░░░▐░▀▐▐░ 
+            ░▌░░▌░▄▄▄▄░░░▌░░░░░░░░▐░░▀▐░░ 
+            ░█░▐▄██████▄░▐░░░░░░░░█▀▄▄▀░░ 
+            ░▐░▌▌░░░░░░▀▀▄▐░░░░░░█▌░░░░░░ 
+            ░░█░░▄▀▀▀▀▄░▄═╝▄░░░▄▀░▌░░░░░░     
+            ░░░▌▐░░░░░░▌░▀▀░░▄▀░░▐░░░░░░░ 
+            ░░░▀▄░░░░░░░░░▄▀▀░░░░█░░░░░░░                ∧__∧
+            ░░░▄█▄▄▄▄▄▄▄▀▀░░░░░░░▌▌░░░░░░              （｀･ω･） 大俠來這有何貴幹?
+            ░░▄▀▌▀▌░░░░░░░░░░░░░▄▀▀▄░░░░░              .ノ^ yヽ、
+            ▄▀░░▌░▀▄░░░░░░░░░░▄▀░░▌░▀▄░░░              ヽ,,ﾉ==l ﾉ
+            ░░░░▌█▄▄▀▄░░░░░░▄▀░░░░▌░░░▌▄▄                /  l |
+            ░░░▄▐██████▄▄░▄▀░░▄▄▄▄▌░░░░▄░           """~""""""~"""~"""~
+            ░░▄▌████████▄▄▄███████▌░░░░░▄ 
+            ░▄▀░██████████████████▌▀▄░░░░ 
+            ▀░░░█████▀▀░░░▀███████░░░▀▄░░ 
+            ░░░░▐█▀░░░▐░░░░░▀████▌░░░░▀▄░ 
+            ░░░░░░▌░░░▐░░░░▐░░▀▀█░░░░░░░▀ 
+            ░░░░░░▐░░░░▌░░░▐░░░░░▌░░░░░░░ 
+            
+            
+    
+    </pre>
+    <!--封面背景-->
     <div class="Image_Background">
+        <!--黑底頁面-->
         <div class="BlackBackground">
+            <!--封面內容-->
             <div class="menucontainer">
+                <!--選單 For 手機-->
                 <div class="leftmenu">
                     <div class="closebtn">
                         X
                     </div>
                     <ul id="menuUl" class="leftul">
-                        <li class="current-active"><a>Home</a></li>
-                        <li><a>關於我</a></li>
-                        <li><a>經歷</a></li>
-                        <li><a>相關</a></li>
+                        <li class="current-active"><a a href="Info.html">Home</a></li>
+                        <li><a href="#aboutme">關於我</a></li>
+                        <li><a href="#skills">技能</a></li>
+                        <li><a href="#myhistory">人生歷程</a></li>
                     </ul>
                 </div>
 
+                <!--選單 For 電腦-->
                 <nav class="menu">
                     <a id="menubtn" class="toggle-nav" href="#">&#9776;</a>
                     <div class="menu-logo"><a></a></div>
                     <ul id="menuUl" class="">
-                        <li class="current-active"><a>Home</a></li>
-                        <li><a>關於我1</a></li>
-                        <li><a>經歷</a></li>
-                        <li><a>相關</a></li>
+                        <li class="current-active"><a href="Info.html">Home</a></li>
+                        <li><a href="#aboutme">關於我</a></li>
+                        <li><a href="#skills">技能</a></li>
+                        <li><a href="#myhistory">人生歷程</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <!-- ======= Hero Section ======= -->
+            <!--封面 介紹文字-->
             <section id="hero" class="d-flex flex-column justify-content-center">
                 <div class="container" data-aos="zoom-in" data-aos-delay="100">
                     <h1>Xeno Zeng</h1>
-                    <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+                    <p>曾皓哲</p>
+                    <p style="font-size:40px;"><span style="font-size: 3vh; color: white;">我是一位</span> <span class="typed" data-typed-items=" 程式設計師, 達悟族人 " style="font-size:3vh;"></span></p>
                 </div>
             </section>
-            <!-- End Hero -->
         </div>
     </div>
 
 
-
-    <section>
+    <!--關於我區塊-->
+    <section id="aboutme" style="background-color:white;">
         <div class="container" data-aos="fade-up">
 
             <div class="title_Ex d-flex justify-content-center">
@@ -69,40 +122,38 @@
             <p class="text-center">一個在資訊</p>
 
             <div class="row infoboard">
-                <div class="col-lg-4">
-                    <img src="assets/image/jQuery.png" class="img-fluid" alt="">
+                <div class="col-lg-7 text-center">
+                    <img src="assets/image/me1.jpg" class="img-fluid" alt="" style="">
                 </div>
-                <div class="col-lg-8 content row">
-                    <div class="col-lg-6">
+                <div class="col-lg-5 row ">
+                    <div class="infotext">
                         <ul>
-                            <li><i class=""></i> <strong>Birthday：</strong><span>1 May 1995</span></li>
-                            <li><i class=""></i> <strong>Website：</strong><span>www.example.com</span></li>
-                            <li><i class=""></i> <strong>Phone：</strong><span>+123 456 7890</span></li>
-                            <li><i class=""></i> <strong>City：</strong><span>New York, USA</span></li>
+                            <li><i class=""></i> <strong>姓名：</strong><span>曾皓哲</span></li>
+                            <li><i class=""></i> <strong>性別：</strong><span>男</span></li>
+                            <li><i class=""></i> <strong>生日：</strong><span>1992/07/03</span></li>
+                            <li><i class=""></i> <strong>年齡：</strong><span>29</span></li>
+                            <li><i class=""></i> <strong>住址：</strong><span>台東縣蘭嶼鄉東清村</span></li>
+                            <li><i class=""></i> <strong>學歷：</strong><span>國立台中科技大學-資訊管理系</span></li>
+                            <li><i class=""></i> <strong>E-mail：</strong><span>vcx732564@hotmail.com</span></li>
+                            <li><i class=""></i> <strong>電話：</strong><span>0987-723-761</span></li>
                         </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <ul>
-                            <li><i class=""></i> <strong>Age：</strong><span>30</span></li>
-                            <li><i class=""></i> <strong>Degree：</strong><span>Master</span></li>
-                            <li><i class=""></i> <strong>E-mail：</strong><span>email@example.com</span></li>
-                            <li><i class=""></i> <strong>Freelance：</strong><span>Available</span></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills section-bg">
-        <div class="container" data-aos="fade-up" style="background-color:white;">
+    <!--技能區塊-->
+    <section id="skills" class="skills section-bg" style="background-color:white;">
+        <div class="container" data-aos="fade-up">
 
             <div class="title_Ex d-flex justify-content-center">
                 <div class="title_left">
                     <img class="title_img" />
                 </div>
                 <div class="title_text">
-                    <h1>Skill</h1>
+                    <h1>技能</h1>
                 </div>
                 <div class="title_right">
                     <img class="title_img" />
@@ -111,96 +162,112 @@
             </div>
 
             <div class="row skills-content">
-
-                <div class="col-lg-6">
-                    <div class="skill_img_1">
-                        <img src="assets/image/coding-b.png" />
-                    </div>
-                </div>
-
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/html.png" />
+                        <div class="col-2" style="padding-top:16px;text-align:end;">
+                            <img src="assets/image/ms_net.png" />
                         </div>
-                        <div class="col-9">
+                        <div class="col-10">
                             <div class="progress">
-                                <span class="skill">HTML<i class="val">80%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="text-align:left;"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/css.png" />
-                        </div>
-                        <div class="col-9">
-                            <div class="progress">
-                                <span class="skill">CSS<i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="text-align:left;"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/js.png" />
-                            <img src="assets/image/jquery.png" />
-                        </div>
-                        <div class="col-9">
-                            <div class="progress">
-                                <span class="skill">JavaScript & jQuery <i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/CShap.png" />
-                        </div>
-                        <div class="col-9">
-                            <div class="progress">
-                                <span class="skill">C#.NET<i class="val">80%</i></span>
+                                <span class="skill">Web後端<i class="val">80%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
+                            <p>
+                                ASP / ASP.NET Web Forms(C#/VB)
+                            </p>
+                            <p>
+                                ASP.NET Core MVC(C#)
+                            </p>
+                            <p>
+                                ※ JSON、XML資料 與 Class、DataTable資料應用 / Session Cookies 資料保留與異動
+                            </p>
+                            <p>
+                                ※ ADO.NET、ODBC / 上傳下載檔案 / Excel 輸出 經驗
+                            </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/VB.png" />
+                        <div class="col-2" style="padding-top:16px;text-align:end;">
+                            <img src="assets/image/html.png" />
                         </div>
-                        <div class="col-9">
+                        <div class="col-10">
                             <div class="progress">
-                                <span class="skill">VB.NET<i class="val">75%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3" style="align-items: center; display: flex; justify-content: center;padding-left:-10px;">
-                            <img src="assets/image/mssql.png" />
-                        </div>
-                        <div class="col-9">
-                            <div class="progress">
-                                <span class="skill">SQL Server <i class="val">70%</i></span>
+                                <span class="skill">Web前端<i class="val">70%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
+                            <p>
+                                HTML／Javascript／CSS／RWD / jQuery / Bootstrap
+                            </p>
+                            <p>
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2" style="padding-top:16px;text-align:end;">
+                            <img src="assets/image/mssql.png" />
+                        </div>
+                        <div class="col-10">
+                            <div class="progress">
+                                <span class="skill">資料庫<i class="val">70%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <p>
+                                MS SQL
+                            </p>
+                            <p>
+                                Oracle
+                            </p>
                         </div>
                     </div>
 
+                </div>
+                <div class="col-lg-6">
+                    <div class="skill_img_1">
+                        <h1>前份工作負責項目</h1>
+                        <hr size="5" align="center" noshade width="90%" color="0000ff">
+                        <div class="row gy-3 text-center">
+                            <div class="col-12">
+                                <strong><span style="font-size:3vh;">主要負責項目</span></strong>
+                            </div>
+                            <div class="col-12">
+                                DMS網頁功能開發與維護（登入權限、報表、案件流程、資料傳遞）
+                            </div>
+                            <div class="col-12">
+                                Web API / Web Service（）
+                            </div>
+
+                            <div class="col-12">
+
+                            </div>
+
+                            <div class="col-12">
+                                <strong><span style="font-size:3vh;">協助項目</span></strong>
+                            </div>
+                            <div class="col-12">
+                                資料庫建置（資料表、）
+                            </div>
+                            <div class="col-12">
+                                Stored Procedure
+                            </div>
+                            <div class="col-12">
+                                SQL指令優化
+                            </div>
+                            <div class="col-12">
+                                Windows 服務
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -208,108 +275,107 @@
         </div>
     </section>
 
-    <section data-aos="fade-up">
-        <div class="title_Ex d-flex justify-content-center">
-            <div class="title_left">
-                <img class="title_img" />
-            </div>
-            <div class="title_text">
-                <h1>人生歷程</h1>
-            </div>
-            <div class="title_right">
-                <img class="title_img" />
-            </div>
+    <!--人生經歷區塊-->
+    <section id="myhistory">
 
-        </div>
-        <div id="cd-timeline" class="cd-container">
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-picture">
-                    2009
+        <div id="cd-timeline" class="cd-container" data-aos="fade-up">
+            <div class="title_Ex d-flex justify-content-center">
+                <div class="title_left">
+                    <img class="title_img" />
                 </div>
-
-                <div class="cd-timeline-content">
-                    <h2>Penta Consulting</h2>
-                    <div class="timeline-content-info">
-                        <span class="timeline-content-info-title">
-                            <i class="fa fa-certificate" aria-hidden="true"></i>
-                            Front End Developer
-                        </span>
-                        <span class="timeline-content-info-date">
-
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            June 2016 - Present
-                        </span>
-                    </div>
-                    <p>Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.</p>
-
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-movie">
-                    2012
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Title of section 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                    <!--<span class="cd-date">Jan 18</span>-->
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                <div class="title_text">
+                    <h1>人生歷程</h1>
+                </div>
+                <div class="title_right">
+                    <img class="title_img" />
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-picture">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Title of section 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                    <!--<span class="cd-date">Jan 24</span>-->
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
-                </div> <!-- cd-timeline-img -->
-
-                <div class="cd-timeline-content">
-                    <h2>Title of section 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                    <!--<span class="cd-date">Feb 14</span>-->
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
-
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-location">
+                    2007
                 </div>
 
                 <div class="cd-timeline-content">
-                    <h2>Title of section 5</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                    <!--<span class="cd-date">Feb 18</span>-->
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                    <h2>就讀國立台東高級商業職業學校</h2>
+                    <!--<div class="timeline-content-info">
+                            <span class="timeline-content-info-title">
+                                <i class="fa fa-certificate" aria-hidden="true"></i>
+                                    ....
+                            </span>
+                            <span class="timeline-content-info-date">
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    ....
+                            </span>
+                        </div>-->
+                    <p>因國中時對電腦與資訊相關技術產生興趣，從中學畢業後選擇台東最好的職業學校就讀。</p>
+
+                </div>
+            </div>
 
             <div class="cd-timeline-block">
                 <div class="cd-timeline-img cd-movie">
-                </div> <!-- cd-timeline-img -->
+                    2010
+                </div>
+                <div class="cd-timeline-content">
+                    <h2>就讀國立台中科技大學</h2>
+                    <p>
+                        放榜時，猶豫台北商業大學與台中科大（原台中技術學院），
+                        因沒來過台中而選擇台中科大，
+                        由於家境因素，在學時靠獎學金與原住民補助金還有打工維持生活。
+                    </p>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    2014
+                </div>
 
                 <div class="cd-timeline-content">
-                    <h2>Final Section</h2>
-                    <p>This is the content of the last section</p>
-                    <!--<span class="cd-date">Feb 26</span>-->
-                </div> <!-- cd-timeline-content -->
-            </div> <!-- cd-timeline-block -->
+                    <h2>服兵役</h2>
+                    <p>就... 國民應盡義務。</p>
+
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    2015
+                </div>
+
+                <div class="cd-timeline-content">
+                    <h2>就職於律碁科技股份有限公司</h2>
+                    <p>
+                        人生的第一份科技業正職工作，
+                        因對網頁產生興趣想找相關行業，
+                        該公司正缺網頁技術人員，且福利不錯而選擇這間公司，
+                        在該公司做了6年後，因回家處理家事選擇離職。
+                    </p>
+                </div>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    Now
+                </div>
+
+                <div class="cd-timeline-content">
+                    <h2>希望是就職於貴公司</h2>
+                    <p>To Be Continued ...</p>
+                </div>
+            </div>
         </div>
-    </section> <!-- cd-timeline -->
+    </section>
 
-
+    <!--參考的JS-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/jquery.nicescroll.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!--AOS 啟動-->
     <script>
         AOS.init();
     </script>
@@ -345,9 +411,19 @@
             });
 
         });
-        
+
     </script>
 
+    <div id="footer" style="background:#343A40;height:150px;">
+        <div style="color:white;text-align:center;padding-top:5vh">
+            Copyright &copy; <span id="footer_Year"></span> <span>Xeno Zeng</span>. All rights reserved.<br />
+            版權所有 &copy; <span id="footer_Year"></span> <span>Xeno Zeng</span><br />
+            <script type="text/javascript">
+                var today = new Date();
+                $("#footer_Year").html('2022 - ' + today.getFullYear());
+            </script>
+        </div>
 
+    </div>
 </body>
 </html>

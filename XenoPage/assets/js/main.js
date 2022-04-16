@@ -7,6 +7,7 @@ $('#menuUl li').click(function () {
     $(this).parent().find('li').each(function () {
         if ($(this).hasClass('current-active')) {
             $(this).toggleClass('current-active');
+            $('.leftmenu').toggleClass('active');
         }
     })
     $(this).toggleClass('current-active');
@@ -20,9 +21,7 @@ $('.closebtn').click(function () {
 
 
 
-/**
-   * Hero type effect
-   */
+/* 主頁 */
 
 const select = (el, all = false) => {
     el = el.trim()
@@ -49,10 +48,7 @@ if (typed) {
 }
 
 
-
-/**
- * Skills animation
- */
+/* 技能 */
 let skilsContent = select('.skills-content');
 if (skilsContent) {
     new Waypoint({
@@ -67,4 +63,3 @@ if (skilsContent) {
     })
 }
 
-// $('nav[class=menu]')
